@@ -4,9 +4,8 @@
 	<title>ChecklistAjax2</title>
 	<%= csrf_meta_tags %>
 
-	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag    'application', media: 'all' %>
 	<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
-	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
@@ -24,5 +23,6 @@
 		</div>
 		<%= yield %>
 	</div>
+		<%= javascript_include_tag 'application' %>
 </body>
 </html>
