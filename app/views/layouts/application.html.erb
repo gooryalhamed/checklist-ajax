@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ChecklistAjax2</title>
-    <%= csrf_meta_tags %>
+<head>
+	<title>ChecklistAjax2</title>
+	<%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+	<div class="container">
+		<div class="row header">
+			<div class="col-xs-4">
+				<h1>
+					<%= image_tag('list.png') %>
+					CheckList
+				</h1>
+			</div>
+			<div class="col-xs-8" id="new-task">
+				<%= render 'tasks/new' %>
+			</div>
+		</div>
+		<%= yield %>
+	</div>
+</body>
 </html>

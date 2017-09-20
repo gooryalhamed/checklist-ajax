@@ -1,0 +1,16 @@
+<div class="row tasks-wrapper">
+	<div class="col-sm-6">
+		<h3 class="text-center">Incompleted Tasks</h3>
+		<hr>
+		<div id="incomplete_tasks">
+			<%= render @incompleted_tasks %>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div id="complete_tasks">
+			<h3 class="text-center">Comlpeted Tasks</h3>
+			<hr>
+			<%= render @completed_tasks %>
+		</div>
+	</div>
+</div>
