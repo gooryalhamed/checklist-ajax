@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+	before_action :find_task, only: [:update, :destroy]
 	def index
 		@new_task = Task.new
 		@incompleted_tasks = Task.where(complete: false)
