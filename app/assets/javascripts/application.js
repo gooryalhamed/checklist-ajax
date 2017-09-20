@@ -9,13 +9,6 @@ jQuery.fn.submitOnCheck = function() {
 	});
 	return this;
 }
-$(document).ready(function(){
-	$('.edit_task').submitOnCheck();
-})
-//bind events on ajax loaded content
-$(document).on("click", '#undo', function(event) { 
-    $('#new_task').remove();
-});
-$(document).on("click", '#add-btn', function(event) { 
-    $('#new_task').submit();
-});
+
+$('.edit_task').submitOnCheck();
+
