@@ -2,16 +2,18 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
+body{
+	background-color:#111;
+}
 .container{
-	padding:20px;width:800px
+	padding:20px;width:800px;
 }
 .container h1{
 	font-family: 'Merienda One', cursive;
 }
-.header{margin-bottom:40px}
+.header{margin-bottom:40px;}
 .header, .tasks-wrapper{
-	border: 5px solid #ff9999;
+	border: 5px solid #ff9999;background-color:#fff;
 	padding: 12px;border-radius:20px;
 }
 #new-task{
