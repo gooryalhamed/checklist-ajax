@@ -3,53 +3,64 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 body{
-	background-color:#111;
+background-color:#111;
 }
 .container{
 	padding:20px;width:800px;
+	h1{
+		font-family: 'Merienda One', cursive;
+	}
+	h3{
+		color:#666;margin-bottom:20px;
+	}
 }
-.container h1{
-	font-family: 'Merienda One', cursive;
-}
-.header{margin-bottom:40px;}
+.header{margin-bottom:30px;}
 .header, .tasks-wrapper{
 	border: 5px solid #ff9999;background-color:#fff;
 	padding: 12px;border-radius:20px;
 }
-#new-task{
-	padding-top:70px;
+
+#new-task-wrapper{
+padding-top:70px;
 }
 #new_task{
-	float:right
+float:right
 }
 #new_task input[type=text]{
-	padding: 6px 12px;border-radius:10px;
-	border: 1px solid #bfbfbf;outline:none
+padding: 6px 12px;border-radius:10px;
+border: 1px solid #bfbfbf;outline:none
 }
 #new_task input[type="submit"]{
-	padding: 5px 12px;background-color:#fff;color:#444;
-	border:1px solid #444;border-radius:14px
+padding: 5px 12px;background-color:#fff;color:#444;
+border:1px solid #444;border-radius:14px
 }
 #new_task input[type="submit"]:hover{
 background-color:#444;color:#fff
 }
-.tasks-wrapper label{font-weight:200}
-.tasks-wrapper{min-height:400px;font-size:17px}
-.container h3{
-color:#666;margin-bottom:20px;}
+.tasks-wrapper{
+	min-height:400px;font-size:17px;
+	label{font-weight:200}
+}
 hr{border:1px solid #666;width:200px}
-
+.edit_task{
+	padding:6px;background-color:#f2f2f2;
+	border:1px solid #e6e6e6;border-radius:8px;margin-bottom:8px;
+	a{
+		color:#404040;float:right
+	}
+}
+/**** responsive ***/
 @media(max-width:820px){
-	.container{width:600px}
+.container{width:600px}
 }
 @media(max-width:615px){
-	.container{width:500px}
-	#new_task input[type=text]{padding:3px 8px}
-	#new_task input[type=submit]{padding:3px 6px}
+.container{width:500px}
+#new_task input[type=text]{padding:3px 8px}
+#new_task input[type=submit]{padding:3px 6px}
 }
 @media(max-width:500px){
-	.container{width:400px}
-	#new-task{padding-top:20px;padding-right:10px;padding-left:0}
+.container{width:400px}
+#new-task{padding-top:20px;padding-right:10px;padding-left:0}
 }
 
 
