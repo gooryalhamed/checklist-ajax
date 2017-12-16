@@ -21,21 +21,25 @@ background-color:#111;
 }
 
 #new-task-wrapper{
-padding-top:70px;
+padding-top:50px;
 }
 #new_task{
-float:right
-}
-#new_task input[type=text]{
-padding: 6px 12px;border-radius:10px;
-border: 1px solid #bfbfbf;outline:none
-}
-#new_task input[type="submit"]{
-padding: 5px 12px;background-color:#fff;color:#444;
-border:1px solid #444;border-radius:14px
-}
-#new_task input[type="submit"]:hover{
-background-color:#444;color:#fff
+	float:right;
+	font-size:15px;
+	input[type=text]{
+		padding: 6px 12px;border-radius:10px;
+		border: 1px solid #bfbfbf;outline:none
+	}
+	input[type="submit"]{
+		padding: 5px 12px;background-color:#fff;color:#444;
+		border:1px solid #444;border-radius:14px
+	}
+	input[type="submit"]:hover{
+	background-color:#444;color:#fff
+	}
+	input[type="date"]{
+		border:none;outline:none;
+	}
 }
 .tasks-wrapper{
 	min-height:400px;font-size:17px;

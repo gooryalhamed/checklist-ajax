@@ -1,4 +1,7 @@
 <%= form_for @new_task,remote: true do |f| %>
-<%= f.text_field :name, placeholder: "Type a new task" %>
+<div>
+	<i class="fa fa-calendar-o" aria-hidden="true"></i> <%= f.date_field :task_date %>
+</div>
+<%= f.text_field :name, placeholder: "Type a new task", required: true %>
 <%= f.submit 'Create' %>
 <% end %>
