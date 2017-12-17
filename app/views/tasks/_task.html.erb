@@ -1,6 +1,9 @@
 <%= form_for task, remote: true do |f| %>
 <%= f.check_box :complete %>
 <%= f.label :complete, task.name %>
-<%= f.submit %>
 <%= link_to '<i class="fa fa-trash" aria-hidden="true"></i>'.html_safe, task, method: :delete,remote: true %>
+<div>
+	<%= f.label :complete ,task.task_date, class: "date" %>
+</div>
+<%= f.submit %>
 <% end %>
