@@ -5,16 +5,19 @@
 body{
 background-color:#111;
 }
+.zero-padding{
+	padding:0;
+}
 .container{
 	padding:20px;width:800px;
 	h1{
 		font-family: 'Merienda One', cursive;
 	}
 	h3{
-		color:#666;margin-bottom:20px;
+		color:#666;margin-bottom:20px;font-family:'Quattrocento Sans', sans-serif;
 	}
 }
-.header{margin-bottom:30px;}
+.header{margin-bottom:25px;}
 .header, .tasks-wrapper{
 	border: 10px solid #2eb8b8;background-color:#fff;
 	padding: 12px;border-radius:20px;
